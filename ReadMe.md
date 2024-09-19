@@ -9,7 +9,6 @@
 - Handling CORS (Cross-Origin Resource Sharing) to ensure secure and seamless communication.
 - Incorporating state management for efficient data handling in React.js.
 
-- [source](https://www.youtube.com/watch?v=rg-OQB0IWJ0)
 - Create a server and client 
 ##### Step-1. Create server using Node.js
 - Click on `server` and open the terminal and type 
@@ -28,7 +27,6 @@ npm i axios cors dotenv
     - import express or constant
     - create variable app and insert express
     - create variable hostname and port
-    <!-- - call the get in app variable, The first parameter ("/") specifies the route, and the second parameter should be a callback function (req, res) and get the response. -->
     - use listen start node.js server and logs a message on the console.
     - If you run the script `npm run start` it will through an error, to resolve this open `package.json` under scripts add **"start":"nodemon index.js"** instead of **test**. add `"type": "module"` in the package.json under main.
 
@@ -44,21 +42,21 @@ npm install axios
 npm start -y
 ```
 - Remove the unwanted files under Public folder like `logo` and under src remove `apptest.js, logo.sgv, reportwebvitals.js`.
-- In index.js remove `reportWebVitals`, edit App.js (install vs extension extensions like ES7 React/Redux snippets) and ad **APP** This will display in the `http://localhost:3001/`.
+- In index.js remove `reportWebVitals`, edit App.js (install vs extension extensions like ES7 React/Redux snippets) 
 #### install tailwind css in App.js
 - Open `tailwindcss.com` - getstarted-- terminal copy install it in the clien side.
 - use [link](https://github.com/Akintola97/weather-yt/blob/main/client/tailwind.config.js) and edit the file `tailwind.config.js`
 
-- upto 12:20 the App.js at client side is tested and working perfectly which means front end is working properly
+- The App.js at client side is tested and working perfectly which means front end is working properly
 - open [link](https://openweathermap.org/)
-- upto 22:10 a single zipcode is getting weather data, this shows the backend is communicating succesfully.
+- a single zipcode is getting weather data, this shows the backend is communicating succesfully.
 
 ### Establish communication between frontend and backend
 - Open client - src - create `components` folder and `Form.jsx` type rafce.
 - Front end created search button
-- upto 52:00 it is working, install dependencies both frontend and backend to avoid unnecessay conflicts.
-- 56:00 error handling
-- 1:01:00 create `WeatherData.jsx` under `src/components` and search for `react router dom` npms. run under client `npm i react-router-dom`
+- it is working, install dependencies both frontend and backend to avoid unnecessay conflicts.
+
+- Ceate `WeatherData.jsx` under `src/components` and search for `react router dom` npms. run under client `npm i react-router-dom`
 - in App.js add add `import {Routers, Router} from 'react-router-dom'` to make this use under `index.js` 
 - 1:11:09 weather data is coming.
 - Frontend/client/reactjs running at 3000 port

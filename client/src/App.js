@@ -9,7 +9,7 @@ function App() {
       <Routes>
       <Route path="/" element = {<Form/>}/>
       {/* <Route path={"/weather"} element = {<Form/>}/> */}
-      <Route path ={'/weatherinfo'} element={<WeatherData/>} />
+      <Route path ={'/weather'} element={<WeatherData/>} />
       </Routes>
     </div>
   );
