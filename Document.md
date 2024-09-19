@@ -121,6 +121,6 @@ docker images
 ```
 cd /3-tier/weatherreport-bdiplus/
 nano .env
-
+docker run -d -p 5000:5000 --env-file .env 3-tier-back-end:latest
 ```
 
