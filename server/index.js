@@ -1,6 +1,5 @@
 const express = require('express');
 const app = express();
-const hostname = 'localhost'
 const port = 5000; 
 require('dotenv').config();
 const axios = require('axios'); 
