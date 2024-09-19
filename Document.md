@@ -119,7 +119,7 @@ docker push 180294218712.dkr.ecr.us-east-1.amazonaws.com/3-tier-back-end:latest
 docker images
 ```
 cd 3-tier/bdiplus/code/Three-tier-Application-Deployment-/backend
-docker run -d -p 5000:5000 -e WEATHER_API_KEY=$WEATHER_API_KEY 3-tier-backend:latest
+docker run -d -p 5000:5000 -e WEATHER_API_KEY=$WEATHER_API_KEY 3-tier-back-end:latest
 rm -rf package-lock.json
 
 
