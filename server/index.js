@@ -11,9 +11,14 @@ app.use(cors())
 app.use(bodyParser.urlencoded({ extended: false }))
 app.use(bodyParser.json())
 
-app.listen(port, hostname, ()=>{
-    console.log(`The Server is running on ${hostname}${port}`)
-})
+// app.listen(port, hostname, ()=>{
+//     console.log(`The Server is running on ${hostname}${port}`)
+// })
+
+// Change the hostname to 0.0.0.0 to bind to all interfaces
+app.listen(port, '0.0.0.0', () => {
+    console.log(`The Server is running on port ${port}`);
+});
 
 // app.post('/',async(req,res)=>{
 //     // console.log(req.body)

@@ -101,7 +101,8 @@ docker images
 - Your new API key will appear. Copy it and use it in your Node.js backend to fetch weather data.
 - store your OpenWeather API key
 ```
-export WEATHER_API_KEY=xxxaaec029cc5d
+nano .env
+api_key=`xxxaaec029cc5d`
 ```
 - Add backend folder with necessary files and push to repository.
 - Open AWS UI setup Elastic container registery with name `3-tier-back-end` and pull the code to the `mgmt server`.
@@ -109,7 +110,7 @@ export WEATHER_API_KEY=xxxaaec029cc5d
 su - brain
 <!-- sudo apt install npm -Y
 npm install express axios dotenv -->
-cd 3-tier/bdiplus/code/Three-tier-Application-Deployment-/backend
+cd /3-tier/weatherreport-bdiplus/server
 ls -al
 aws configure (if required)
 aws ecr get-login-password --region us-east-1 | docker login --username AWS --password-stdin 180294218712.dkr.ecr.us-east-1.amazonaws.com
@@ -118,10 +119,8 @@ docker tag 3-tier-back-end:latest 180294218712.dkr.ecr.us-east-1.amazonaws.com/3
 docker push 180294218712.dkr.ecr.us-east-1.amazonaws.com/3-tier-back-end:latest
 docker images
 ```
-cd 3-tier/bdiplus/code/Three-tier-Application-Deployment-/backend
-docker run -d -p 5000:5000 -e WEATHER_API_KEY=$WEATHER_API_KEY 3-tier-back-end:latest
-rm -rf package-lock.json
-
+cd /3-tier/weatherreport-bdiplus/
+nano .env
 
 ```
 
