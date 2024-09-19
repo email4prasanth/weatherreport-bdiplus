@@ -14,7 +14,7 @@ RUN npm install
 COPY . .
 
 # Build the application (if needed)
-RUN npm run start
+RUN npm install
 
 # Expose the port the app runs on
 EXPOSE 5000
