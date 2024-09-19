@@ -107,15 +107,15 @@ export WEATHER_API_KEY=xxxaaec029cc5d
 - Open AWS UI setup Elastic container registery with name `3-tier-back-end` and pull the code to the `mgmt server`.
 ```
 su - brain
-sudo apt install npm -Y
-npm install express axios dotenv
+<!-- sudo apt install npm -Y
+npm install express axios dotenv -->
 cd 3-tier/bdiplus/code/Three-tier-Application-Deployment-/backend
 ls -al
 aws configure (if required)
-aws ecr get-login-password --region us-east-1 | docker login --username AWS --password-stdin 195275668955.dkr.ecr.us-east-1.amazonaws.com
-docker build -t 3-tier-backend .
-docker tag 3-tier-backend:latest 195275668955.dkr.ecr.us-east-1.amazonaws.com/3-tier-backend:latest
-docker push 195275668955.dkr.ecr.us-east-1.amazonaws.com/3-tier-backend:latest
+aws ecr get-login-password --region us-east-1 | docker login --username AWS --password-stdin 180294218712.dkr.ecr.us-east-1.amazonaws.com
+docker build -t 3-tier-back-end .
+docker tag 3-tier-back-end:latest 180294218712.dkr.ecr.us-east-1.amazonaws.com/3-tier-back-end:latest
+docker push 180294218712.dkr.ecr.us-east-1.amazonaws.com/3-tier-back-end:latest
 docker images
 ```
 cd 3-tier/bdiplus/code/Three-tier-Application-Deployment-/backend
