@@ -7,8 +7,8 @@ function App() {
     <div>
       {/* <Form/> */}
       <Routes>
-      {/* <Route path="/" element = {<Form/>}/> */}
-      <Route path={"/weather"} element = {<Form/>}/>
+      <Route path="/" element = {<Form/>}/>
+      {/* <Route path={"/weather"} element = {<Form/>}/> */}
       <Route path ={'/weatherinfo'} element={<WeatherData/>} />
       </Routes>
     </div>
