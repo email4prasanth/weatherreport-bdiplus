@@ -77,7 +77,7 @@ eksctl version
 su - brain  
 kubectl version && eksctl version
 ```
-- Create an AMI
+- Create an AMI 
 ### Built frontend and backend images
 - Open AWS UI setup Elastic container registery with name `3-tier-front-end`
 ```

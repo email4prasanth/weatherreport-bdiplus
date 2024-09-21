@@ -61,3 +61,9 @@ npm start -y
 - 1:11:09 weather data is coming.
 - Frontend/client/reactjs running at 3000 port
 - Backend/server/nodejs is running at 5000 port
+
+
+- I pulled the code from repo, i open client where `node_modules` are not available so ran `npm install react-scripts@latest` then  `npm run start`.
+- I open server and installed
+```
+npm i nodemon
