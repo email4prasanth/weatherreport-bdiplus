@@ -66,4 +66,6 @@ npm start -y
 - I pulled the code from repo, i open client where `node_modules` are not available so ran `npm install react-scripts@latest` then  `npm run start`.
 - I open server and installed
 ```
-npm i nodemon
+npm i express nodemon body-parser axios cors dotenv
+```
+- `npm run build` is done on client proxy added along with home page
